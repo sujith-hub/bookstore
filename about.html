@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books - BOOKS STORE</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--------------header------------------------->
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="cart.png" width="30px" height="30px"></a>
+            <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+    <div class="categories">
+        <h1>About Us</h1>
+        <div class="small-container">
+            <div class="row">
+                <div class="col">
+                    <img src="sujith.jpeg">
+                    <h5>Sujith Gurrapu</h5>
+                    <h8>Developer & Designer</h8>
+                    <p>I am a developer. I can provide clean and perfect design. I make the website more interactive with web animations. A responsive design makes your website accessible to all users</p>
+                    <a href="resume.pdf" class="btn">Hire Me</a>
+                </div>
+                <div class="col">
+                    <img src="sahith.jpeg">
+                    <h5>Sahith Paladugula</h5>
+                    <h8>Ideation & Administrator</h8>
+                    <p>I own this idea and gave my time to implement the idea and manage the company to make good outputs. My slogan is "Gain the Knowledge and become a star"</p>
+                    <a href="SAHITH7.pdf" class="btn">Hire Me</a>   
+                </div>
+                <div class="col">
+                    <img src="harsha.jpeg" width="1080px" height="285px">
+                    <h5>Sriharsha Samala</h5>
+                    <h8>Marketing & Support Developer</h8>
+                    <p>I am a marketing manager.I would like to work for the company and make the company to get more earnings and better business. Hand in development also.</p>
+                    <a href="Resume_Sriharsha.pdf" class="btn">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="video">
+            <video width="800px" controls>
+                <source src="videooe.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <!-----------------------footer-------------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h4>Download Our App</h4>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="play-store.png">
+                        <img src="app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="logo.png">
+                    <p>Our purpose is to get books to every person who is willing to read.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Store</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - Book Store</p>
+        </div>
+    </div>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "250px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books - BOOKS STORE</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&
+    display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/
+    font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--------------header------------------------->
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="cart.png" width="30px" height="30px"></a>
+            <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+
+    <!---------------featured category --------------->
+    <div class="categories1">
+        <div class="row1-1">
+            <a href="renting.html" class="btn1">Renting &#8594;</a>
+            <a href="selling.html" class="btn1">Selling &#8594;</a>
+            <a href="rentyourbook.html" class="btn1">Lend your book &#8594;</a>
+            <a href="sellyourbook.html" class="btn1">Sell your book &#8594;</a>
+        </div>
+    </div>
+    <h1>Rent Your Book Here</h1>
+    <div class="contact-section">
+        <h1>Details For renting</h1>
+        <form name="detailsforrent" class="contact-form" action="POST" data-netlify="true">
+            <input type="hidden" name="subject" value="Detailsforrent page information from genuine-liger-9112e7.netlify.app" />
+            <input type="text" name="Name" class="contact-form-text" placeholder="Your name">
+            <input type="email" name="Email" class="contact-form-text" placeholder="Your email">
+            <input type="text" name="Phone number" class="contact-form-text" placeholder="Your Phone">
+            <p>In message please mention about lend or sell of your book.</p>
+            <textarea class="contact-form-text" name="Message" placeholder="Your message about the book"></textarea>
+            <input type="file" name="myfile" id="myfile" class="myclass" placeholder="Upload File" rows="7"/>
+            <div class="field">
+                <div data-netlify-recaptcha="true"></div>
+            </div>
+            <input type="text" name="Bookdetails" class="contact-form-text" placeholder="how much you want to lend are sell(in Rupees)?">
+            <a href="index.html">
+                <button class="btn">Submit</button>
+            </a>
+        </form>
+    </div>
+    <div id="status">Thank you</div>
+    <!-----------------------footer-------------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h4>Download Our App</h4>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="play-store.png ">
+                        <img src="app-store.png ">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="logo.png">
+                    <p>Our purpose is to get books to every person who is willing to read.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Store</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - Book Store</p>
+        </div>
+    </div>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "250px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKS STORE</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--------------header------------------------->
+    <div class=" header ">
+        <div class="container ">
+            <div class="navbar ">
+                <div class="logo ">
+                    <a href="index.html "><img src="logo.png" width="125px "></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems ">
+                        <li><a href="index.html ">Home</a></li>
+                        <li><a href="books.html ">Books</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="about.html ">About</a></li>
+                        <li><a href="contact.html ">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html "><img src="cart.png " width="30px " height="30px "></a>
+                <img src="menu.png " class="menu-icon " onclick="menutoggle()">
+            </div>
+            <div class="row ">
+                <div class="col-2 ">
+                    <h1>KNOWLEDGE HAS A BEGINNING <br> BUT NO ENDING</h1>
+                    <p>Success isn't always about greatness. It's about consistency. Consistent <br> hard work gains success. Greatness will come.</p>
+                    <a href="account.html" class="btn ">Register Now &#8594;</a>
+                </div>
+                <div class="col-2 ">
+                    <img src="banner.jpg " width="1000px ">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col2">
+                <img src="book3.jpg" width="100%">
+            </div>
+            <div class="col2">
+                <p>Home / Book</p>
+                <h3>To Kill a Mockingbird</h3>
+                <h7>Rs: 150.00</h7>
+                <input type="number" value="1">
+                <a href="cart.html" class="btn"> Add To Cart</a>
+                <a href="payment.html" class="btn"> Buy Now</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-----------------------footer-------------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h4>Download Our App</h4>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="play-store.png">
+                        <img src="app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="logo.png">
+                    <p>Our purpose is to get books to every person who is willing to read.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Store</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - Book Store</p>
+        </div>
+    </div>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "250px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

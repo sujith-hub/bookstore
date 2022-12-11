@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BOOKS STORE</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</body>
+<body>
+    <!--------------header------------------------->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="logo.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a id="Click" onclick="clicked()" href="index.html">Home</a></li>
+                        <li><a href="books.html">Books</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="cart.png" width="30px" height="30px"></a>
+                <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>GAIN THE KNOWLEDGE <br> BECOME A STAR</h1>
+                    <p>Success isn't always about greatness. It's about consistency. Consistent <br> hard work gains success. Greatness will come.</p>
+                    <a href="account.html" class="btn">Register Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="banner.jpg" width="1000px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <p1>Here you can get the PDF's of some courses. I hope these are helpful to you.</p1>
+    <div class="categories">
+        <h1>Group-4 Materials</h1>
+        <div class="small-container">
+            <div class="row">
+                <a href="" class="btn">Previous(2018)</a>
+                <a href="" class="btn"></a>
+                <a href="" class="btn"></a>
+                <a href="" class="btn"></a>
+                <a href="" class="btn"></a>
+            </div>
+        </div>
+    </div>
+    <div class="categories">
+        <h1>Programming</h1>
+        <div class="small-container">
+            <div class="row">
+                <a href="ctext.pdf" class="btn">C language</a>
+                <a href="Data-Structure-Final-.pdf" class="btn">Data Structures</a>
+                <a href="java.pdf" class="btn">Java</a>
+                <a href="python_tutorial.pdf" class="btn">Python</a>
+                <a href="front.pdf" class="btn">Frontend(HTML,CSS,JAVASCRIPT)</a>
+            </div>
+        </div>
+    </div>
+    <div class="categories">
+        <h1>CSE</h1>
+        <div class="small-container">
+            <div class="row">
+                <a href="thebook.pdf" class="btn">Machine learning</a>
+                <a href="deeplearning.pdf" class="btn">Deep learning</a>
+                <a href="neuralnetwork.pdf" class="btn">Neural Network</a>
+                <a href="cn.pdf" class="btn">Computer Network</a>
+                <a href="sql.pdf" class="btn">Database(mysql)</a>
+            </div>
+        </div>
+    </div>
+    <div class="categories">
+        <h1>ECE</h1>
+        <div class="small-container">
+            <div class="row">
+                <a href="thebook.pdf" class="btn">Machine learning</a>
+                <a href="deeplearning.pdf" class="btn">Deep learning</a>
+                <a href="neuralnetwork.pdf" class="btn">Neural Network</a>
+                <a href="cn.pdf" class="btn">Computer Network</a>
+                <a href="sql.pdf" class="btn">Database(mysql)</a>
+            </div>
+        </div>
+    </div>
+    <div class="categories">
+        <h1>CIVIL</h1>
+        <div class="small-container">
+            <div class="row">
+                <a href="thebook.pdf" class="btn">Machine learning</a>
+                <a href="deeplearning.pdf" class="btn">Deep learning</a>
+                <a href="neuralnetwork.pdf" class="btn">Neural Network</a>
+                <a href="cn.pdf" class="btn">Computer Network</a>
+                <a href="sql.pdf" class="btn">Database(mysql)</a>
+            </div>
+        </div>
+    </div>
+    <div class="categories">
+        <h1>MECHANICAL</h1>
+        <div class="small-container">
+            <div class="row">
+                <a href="thebook.pdf" class="btn">Machine learning</a>
+                <a href="deeplearning.pdf" class="btn">Deep learning</a>
+                <a href="neuralnetwork.pdf" class="btn">Neural Network</a>
+                <a href="cn.pdf" class="btn">Computer Network</a>
+                <a href="sql.pdf" class="btn">Database(mysql)</a>
+            </div>
+        </div>
+    </div>
+    <div class="categories">
+        <h1>ELECTRICAL</h1>
+        <div class="small-container">
+            <div class="row">
+                <a href="thebook.pdf" class="btn">Machine learning</a>
+                <a href="deeplearning.pdf" class="btn">Deep learning</a>
+                <a href="neuralnetwork.pdf" class="btn">Neural Network</a>
+                <a href="cn.pdf" class="btn">Computer Network</a>
+                <a href="sql.pdf" class="btn">Database(mysql)</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "250px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
